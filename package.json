@@ -1,6 +1,12 @@
 {
-  "name": "root",
+  "name": "module-federation",
   "private": true,
+  "workspaces": {
+    "packages": [
+      "app1",
+      "app2"
+    ]
+  },
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start": "lerna run --parallel start",
